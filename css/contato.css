@@ -1,0 +1,75 @@
+.titulo{
+    font-size: 15px;
+    background-color: #333;
+    color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+}
+.card { /*estilização do formulário*/
+    margin: 0 auto;
+    width: 400px;
+    /*bordas do formulário */
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+form div + div { /*pesquisei na internet*/
+    margin-top: 8px; /*adiciona espaço entre os campos dos forms*/
+}
+label {
+    /*Todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, 
+textarea {
+    /* Todos os campos com a mesma fonte*/
+    font: 15px sans-serif;
+    /* mesmo tamanho pra todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    /* Destacar elementos clicados (ativos) com borda preta*/
+    border-color: #000;
+}
+
+textarea {
+    /* Alinhar corretamente os campos de texto de várias linhas*/
+    vertical-align: top;
+
+    /* Dar espaço suficiente para digitar algum texto */
+    height: 100px;
+
+    /* O usuário pode redimensionar qualquer textarea verticalmente. */
+    resize: vertical;
+}
+.botao {
+    /* Posicionando o botão*/
+    padding-left: 90px; 
+    
+}
+.botao button { /*estilizando o botao*/
+    margin-left: 4px;
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all ease 0.3s;
+}
+
+button:hover{/*Ao passar o mouse em cima do botao, o mesmo troca de cor*/
+    background-color: rgb(255, 255, 255);
+    color: #333;
+}

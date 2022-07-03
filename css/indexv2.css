@@ -1,0 +1,118 @@
+
+.menu-e-imgpromo{
+    display: flex;
+}
+.menu-e-imgpromo > section { /*Para cada section*/
+    width: calc(100%/2); /*Definindo o tamanho de 1/2 página para cada painel*/
+}
+.busca{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.busca, .menu-departamentos{
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 350px;
+
+}
+.busca h2, 
+.busca form, 
+.menu-departamentos h2{
+    margin: 10px;
+}
+.menu-departamentos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.menu-departamentos li{
+    display: block;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+.menu-departamentos a{
+    color: #333333;
+    text-decoration: none;
+}
+.img-promocional img{
+    width: 1220px;
+    margin-left: -50px;
+    margin-top: 15px;
+    
+}
+.paineis{
+    display: flex;
+}
+.paineis > section { /*Para cada section*/
+    width: calc(100%/2); /*Definindo o tamanho de 1/2 página para cada painel*/
+}
+.painel-novidades{
+    background-color: gray;
+    margin-top: -21px;
+    animation: blinkingBackground 2s infinite;
+}
+.painel-mais-vendidos{
+    background-color: whitesmoke;
+    margin-top: -21px;
+    animation: blinkingBackground2 2s infinite;
+}
+.painel-novidades h2
+{
+    color: white;
+    text-align: center;
+}
+.painel-novidades img{
+    width: 200px;
+    display: block;
+    margin: 0px auto;/*Centralizando imagem*/
+}
+.painel-novidades ol li{
+    display: block;
+}
+.painel-novidades ol li a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+}
+.painel-mais-vendidos h2{
+    color: black;
+    text-align: center;
+}
+.painel-mais-vendidos img{
+    width: 200px;
+    display: block;
+    margin: 0px auto;/*Centralizando imagem*/
+}
+.painel-mais-vendidos ol li{
+    display: block;
+}
+.painel-mais-vendidos ol li a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+}
+
+
+/*Animacao*/
+/*Fonte: https://bytutorial.com/blogs/css3/how-to-create-blinking-background-color-and-text-using-css3-animation*/
+@keyframes blinkingBackground{
+    0%		{ background-color: #10c018;}
+    25%		{ background-color: #1056c0;}
+    50%		{ background-color: #ef0a1a;}
+    75%		{ background-color: #333333}
+    100%	{ background-color: #04a1d5;}
+}
+
+@keyframes blinkingBackground2{
+    0%		{ background-color: #bac010; }
+    25%		{ background-color: #10c018;}
+    50%		{ background-color: #dfd8d8;}
+    75%		{ background-color: #178fa1; }
+    100%	{ background-color: #ef0a1a;}
+}
