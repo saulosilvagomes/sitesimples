@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <script src="script/form.js"></script>
+    <title>Contato</title>
+</head>
+<body>
+    <header><!--Início do Cabeçalho -->
+        <figure class="logotipo"><!--Inserindo logotipo -->
+            <h1>
+                <img src="img/logo1.png" alt="Guitarra">
+            </h1>
+        </figure>
+        <!--Declarando a sacola -->
+        <p class="sacola">Nenhum item na sua sacola de compras</p>
+
+        <!--Declarando o menu de opções administrativas -->
+        <nav class="menu-adm">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sua Conta</a></li>
+                <li><a href="#">Cartão Fidelidade</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header> <!-- Fim do cabeçalho -->
+    <div class="titulo">
+        <h1>Preencha os dados do formulário</h1>
+    </div>
+    <!--Formulário de contato, levando à página resposta.html-->
+    <form id="form1" name="form1" method="post" action="resposta.html" onsubmit="return valida.valida_form(this)">
+        <div class="card">
+            <div class="nome">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Ex.: Antonio da Silva">
+            </div>
+            
+            <div class="email">
+                <label for="e-mail">Endereço de E-mail: </label>
+                <input type="e-mail" name="email" id="email" placeholder="Ex.: bla@blabla.com">
+            </div>
+
+            <div class="telefone">
+                <label for="telefone">Número de Telefone: </label>
+                <input type="text" name="telefone" id="telefone" placeholder="Ex.: (47) 1234-5678">
+            </div>
+
+            <div class="mensagem">
+                <label for="msg">Mensagem:</label>
+                <textarea name="msg" id="msg"></textarea>
+            </div>
+
+            <div class="botao">
+                <button>Enviar</button>
+            </div>   
+        </div>
+    </form>
+
+    <footer>
+        <!--Conteúdo do rodapé-->
+        <div class="container">
+            <figure>
+                <img src="img/logorodape.png" alt="Logo Negativo" width="300px">
+            </figure>
+            <ul class="social">
+                <li><a href="http://www.facebook.com">Facebook</a></li>
+                <li><a href="http://www.twitter.com">Twitter</a></li>
+                <li><a href="http://www.instagram.com">Instagram</a></li>
+            </ul>
+            <h3>Autoria: Saulo Silva Gomes - T3 JOINVILLE</h3>
+        </div>
+        
+    </footer>
+</body>
+</html>
